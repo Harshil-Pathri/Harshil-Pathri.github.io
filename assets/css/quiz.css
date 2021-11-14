@@ -10,7 +10,7 @@
 .btn-strongly-agree.active:focus,
 .btn-strongly-agree:hover
  {
-	background-color: #89d298;
+	background-color: #4ad466;
     outline: none;
 }
 
@@ -24,7 +24,7 @@
 .btn-agree:active:focus,
 .btn-agree.active:focus,
 .btn-agree:hover {
-	background-color: rgba(137, 210, 152, 0.5);
+	background-color: #89d298;
     outline: none;
 }
 
@@ -38,7 +38,7 @@
 .btn-disagree:active:focus,
 .btn-disagree.active:focus,
 .btn-disagree:hover {
-	background-color: rgba(226, 129, 129, 0.5);
+	background-color: #e28181;
     outline: none;
 }
 
@@ -53,7 +53,7 @@
 .btn-strongly-disagree:active:focus,
 .btn-strongly-disagree.active:focus,
 .btn-strongly-disagree:hover {
-	background-color: #e28181;
+	background-color: rgb(204, 41, 41);
     outline: none;
 }
 

@@ -1,31 +1,115 @@
 var prompts = [
     {
-        prompt: 'Prompt1',
+        prompt: 'I will occassionally gossip about others',
         class: 'group0',
-        elizabeth: [0, 1, 0, -1, -2],
-        mr_bingley: [0, 1, 0, -1, -2],
-        mr_darcy: [0, 1, 0, -1, -2],
-        jane: [0, 1, 0, -1, -2],
-        lydia: [0, 1, 0, -1, -2],
-        ms_bingley: [0, 1, 0, -1, -2],
-        mr_bennet: [0, 1, 0, -1, -2],
-        ms_bennet: [0, 1, 0, -1, -2],
-        ms_darcy: [0, 1, 0, -1, -2],
-        mr_collins: [0, 1, 0, -1, -2]
+        elizabeth: [0, 0, 0, 0, 0],
+        mr_bingley: [0, 0, 0, 0, 1],
+        mr_darcy: [0, 0, 0, 0, 0],
+        jane: [0, 0, 0, 0, 1],
+        lydia: [0, 0, -1, -2, -3],
+        ms_bingley: [0, 0, 0, -1, -2],
+        mr_bennet: [0, 0, 1, 2, 3],
+        ms_bennet: [0, 0, -1, -2, -3],
+        ms_darcy: [0, 0, 0, 1, 1],
+        mr_collins: [0, 0, 0, 0, -1]
     },
     {
-        prompt: 'Prompt2',
+        prompt: 'I act rashly and don\'t always consider all consequences before taking large decisions',
         class: 'group1',
-        elizabeth: [0, 3, 0, -1, -10],
-        mr_bingley: [0, 1, 0, -1, 10],
-        mr_darcy: [0, 1, 0, -1, -2],
-        jane: [0, 1, 0, -1, 20],
-        lydia: [0, 1, 0, -1, -2],
-        ms_bingley: [0, 1, 0, -1, -2],
-        mr_bennet: [0, 1, 0, -1, -2],
-        ms_bennet: [0, 1, 0, -1, -2],
-        ms_darcy: [0, 1, 0, -1, -2],
-        mr_collins: [0, 1, 0, -1, -2]
+        elizabeth: [0, 0, 2, 4, 5],
+        mr_bingley: [0, 0, 0, 1, 2],
+        mr_darcy: [0, 0, 1, 3, 4],
+        jane: [0, 0, 0, 1, 1],
+        lydia: [0, -1, -2, -4, -5],
+        ms_bingley: [0, 0, 1, 2, 3],
+        mr_bennet: [0, 0, 2, 3, 4],
+        ms_bennet: [0, 0, 0, -1, -2],
+        ms_darcy: [0, 0, 0, 0, 1],
+        mr_collins: [0, 0, 0, -1, -2]
+    },
+    {
+        prompt: 'I don\'t really see good in everyone and see some people as better than others',
+        class: 'group2',
+        elizabeth: [0, 0, 0, -1, -2],
+        mr_bingley: [0, 0, 1, 2, 3],
+        mr_darcy: [0, 0, 0, -1, -2],
+        jane: [0, 0, 1, 3, 4],
+        lydia: [0, 0, -1, -2, -3],
+        ms_bingley: [0, 0, -1, -1, -2],
+        mr_bennet: [0, 0, 0, 1, 1],
+        ms_bennet: [0, 0, -1, -1, -2],
+        ms_darcy: [0, 0, 1, 1, 2],
+        mr_collins: [0, 0, 0, -1, -1]
+    },
+    {
+        prompt: 'I don\'t analyze people and don\'t care about their true intentions',
+        class: 'group3',
+        elizabeth: [0, 0, 1, 2, 3],
+        mr_bingley: [0, 0, 0, 1, 1],
+        mr_darcy: [0, 0, 1, 3, 5],
+        jane: [0, 0, 0, 1, 0],
+        lydia: [0, 0, -1, -3, -4],
+        ms_bingley: [0, 0, 0, 1, 3],
+        mr_bennet: [0, 0, 0, 1, 2],
+        ms_bennet: [0, 0, 0, -1, -2],
+        ms_darcy: [0, 0, 0, 0, 0],
+        mr_collins: [0, 0, 0, 0, -1]
+    },
+    {
+        prompt: 'I am not quiet nor shy, and I love to draw attention to myself',
+        class: 'group4',
+        elizabeth: [0, 0, 0, 0, -1],
+        mr_bingley: [0, 0, 0, 0, -1],
+        mr_darcy: [0, 0, 0, 0, -1],
+        jane: [0, 0, 0, 0, -1],
+        lydia: [0, 0, 0, -2, -3],
+        ms_bingley: [0, 0, 0, 0, -1],
+        mr_bennet: [0, 0, 0, 0, -1],
+        ms_bennet: [0, 0, -1, -2, -2],
+        ms_darcy: [0, 0, 2, 4, 5],
+        mr_collins: [0, 0, 0, 0, -1]
+    },
+    {
+        prompt: 'I am not religious and dislike religion',
+        class: 'group5',
+        elizabeth: [0, 0, 0, 0, 0],
+        mr_bingley: [0, 0, 0, 0, 0],
+        mr_darcy: [0, 0, 0, 0, 0],
+        jane: [0, 0, 0, 0, 0],
+        lydia: [0, 0, 0, 0, 0],
+        ms_bingley: [0, 0, 0, 0, 0],
+        mr_bennet: [0, 0, 0, 0, 0],
+        ms_bennet: [0, 0, 0, 0, 0],
+        ms_darcy: [0, 0, 0, 0, 0],
+        mr_collins: [0, 0, 1, 3, 4]
+    },
+    {
+        prompt: 'I will do anything to marry the person of my dreams',
+        class: 'group6',
+        elizabeth: [0, 0, 0, 0, 1],
+        mr_bingley: [0, 0, 0, 0, 1],
+        mr_darcy: [0, 0, 0, 0, 0],
+        jane: [0, 0, 0, 0, 0],
+        lydia: [0, 0, 0, -1, -2],
+        ms_bingley: [0, 0, 0, -1, -2],
+        mr_bennet: [0, 0, 0, 0, 0],
+        ms_bennet: [0, 0, 0, 0, 0],
+        ms_darcy: [0, 0, 0, 0, 0],
+        mr_collins: [0, 0, 0, 0, 0]
+    },
+    {
+        prompt: 'I don\'t care much about my family and am not willing to do much for them',
+        class: 'group7',
+        elizabeth: [0, 0, 1, 2, 2],
+        mr_bingley: [0, 0, 0, 1, 2],
+        mr_darcy: [0, 0, 1, 3, 4],
+        jane: [0, 0, 0, 2, 3],
+        lydia: [0, 0, 0, -1, -2],
+        ms_bingley: [0, 0, 0, 0, 1],
+        mr_bennet: [0, 0, 0, 1, 2],
+        ms_bennet: [0, 0, 1, 3, 4],
+        ms_darcy: [0, 0, 0, 1, 2],
+        mr_collins: [0, 0, 0, 0, -1]
     }
     
 ]
@@ -244,34 +328,34 @@ $('#submit-btn').click(function () {
     var max = getMax();
     
     if(max === "elizabeth") {
-        document.getElementById('results').innerHTML = '<b>You are Elizabeth!</b><br><br>';
+        document.getElementById('results').innerHTML = '<b>Your personality is closest to mine!<br>I am an intelligent and analytical individual. Though I do not wish to appear as self-conceited, I am, with the possible exception of Jane, the most sensible among my sisters.</b><br><br>';
     } 
     else if(max === "jane") {
-        document.getElementById('results').innerHTML = '<b>You are Jane!</b><br><br>';
+        document.getElementById('results').innerHTML = '<b>Your personality is closest to Jane\'s!<br>Jane is the most kind and amiable soul I have ever known, and she can see goodness in everyone.</b><br><br>';
     }
     else if(max === "mr_bingley") {
-        document.getElementById('results').innerHTML = '<b>You are mr_bingley!</b><br><br>';
+        document.getElementById('results').innerHTML = '<b>Your personality is closest to Mr. Bingley\'s!<br>With the possible exception of Mr. Darcy, Mr. Bingley is the other most agreeable person I have ever met. He is engaged to Jane, and I can not think of any one else who could even be considered as worth Jane\'s hand in marriage.</b><br><br>';
     }
     else if(max === "mr_darcy") {
-        document.getElementById('results').innerHTML = '<b>You are mr_darcy!</b><br><br>';
+        document.getElementById('results').innerHTML = '<b>Your personality is closest to Mr. Darcy\'s!<br>Darcy is one of the only people I have ever met who matches my skill in the analysis of people. He is extremely rich, and he mainly only has pride that anyone of his large stature and power would.</b><br><br>';
     }
     else if(max === "lydia") {
-        document.getElementById('results').innerHTML = '<b>You are lydia!</b><br><br>';
+        document.getElementById('results').innerHTML = '<b>Your personality is closest to Lydia\'s!<br>Lydia is a very frivolous girl who has a large fascination with officers, and has been attracted to them her entire life.</b><br><br>';
     }
     else if(max === "ms_bingley") {
-        document.getElementById('results').innerHTML = '<b>You are ms_bingley!</b><br><br>';
+        document.getElementById('results').innerHTML = '<b>Your personality is closest to Ms. Bingley\'s!<br>Ms. Bingley is a woman who was willing to do anything to marry Mr. Darcy. In one of her plights, she separated Mr. Bingley and Jane.</b><br><br>';
     }
     else if(max === "mr_bennet") {
-        document.getElementById('results').innerHTML = '<b>You are mr_bennet!</b><br><br>';
+        document.getElementById('results').innerHTML = '<b>Your personality is closest to Mr. Bennet\'s!<br>My father, Mr. Bennet, is very smart and is quite abnormal in that he does not often follow the social norm. In terms of his personality, he is "...a mixture of quick parts, sarcastic humour, reserve, and caprice" (Austen 3).</b><br><br>';
     }
     else if(max === "ms_bennet") {
-        document.getElementById('results').innerHTML = '<b>You are ms_bennet!</b><br><br>';
+        document.getElementById('results').innerHTML = '<b>Your personality is closest to Mrs. Bennet\'s!<br>Mrs. Bennet is very social and gossips with everyone about everything. She is "... a woman of mean understanding, little information, and uncertain temper ... [and the] business of her life [is] to get her daughters married" (Austen 3).</b><br><br>';
     }
     else if(max === "ms_darcy") {
-        document.getElementById('results').innerHTML = '<b>You are ms_darcy!</b><br><br>';
+        document.getElementById('results').innerHTML = '<b>Your personality is closest to Ms. Darcy\'s!<br>Ms. Darcy is the very shy and kind-hearted sister of Mr. Darcy. My first imagination of her as a egoistical rich woman, based on Mr. Wickham\'s description, could not have been any further from reality.</b><br><br>';
     }
     else {
-        document.getElementById('results').innerHTML = '<b>You are mr_collins!</b><br><br>';
+        document.getElementById('results').innerHTML = '<b>Your personality is closest to Mr. Collin\'s!<br>Mr. Collins is a clergyman who is a "conceited, pompous, narrow-minded, silly man" (Austen 123).</b><br><br>';
     }
 
     $('#quiz').addClass('hide');
