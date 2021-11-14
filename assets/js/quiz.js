@@ -115,7 +115,7 @@ function createPromptItems() {
         var prompt_p = document.createElement('p');
         var prompt_text = document.createTextNode(prompts[i].prompt);
 
-        prompt_li.setAttribute('class', 'list-group-item prompt');
+        prompt_li.setAttribute('class', 'list-group-item prompt blue-bkgd');
         prompt_p.appendChild(prompt_text);
         prompt_li.appendChild(prompt_p);
 
