@@ -11,6 +11,7 @@
 .btn-strongly-agree:hover
  {
 	background-color: #89d298;
+    outline: none;
 }
 
 .btn-agree {
@@ -24,6 +25,7 @@
 .btn-agree.active:focus,
 .btn-agree:hover {
 	background-color: rgba(137, 210, 152, 0.5);
+    outline: none;
 }
 
 .btn-disagree {
@@ -37,6 +39,7 @@
 .btn-disagree.active:focus,
 .btn-disagree:hover {
 	background-color: rgba(226, 129, 129, 0.5);
+    outline: none;
 }
 
 .btn-strongly-disagree {
@@ -51,6 +54,7 @@
 .btn-strongly-disagree.active:focus,
 .btn-strongly-disagree:hover {
 	background-color: #e28181;
+    outline: none;
 }
 
 .bottom {
@@ -63,4 +67,13 @@
 
 .show {
 	display: block;
+}
+
+.btn-default.active,
+.btn-default:active,
+.btn-default:focus,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.btn-default:hover {
+    outline: none;
 }
