@@ -117,7 +117,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-family: Brush Script MT, Brush Script Std, cursive;
 		font-size: 17pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
@@ -253,7 +253,7 @@ input, select, textarea {
 
 	code {
 		background: rgba(212, 212, 255, 0.035);
-		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-family: Brush Script MT, Brush Script Std, cursive;
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -261,7 +261,7 @@ input, select, textarea {
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-family: Brush Script MT, Brush Script Std, cursive;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
@@ -2018,7 +2018,7 @@ input, select, textarea {
 				text-rendering: auto;
 				line-height: 1;
 				text-transform: none !important;
-				font-family: Georgia, 'Times New Roman', Times, serif;
+				font-family: Brush Script MT, Brush Script Std, cursive;
 				font-weight: 900;
 			}
 
@@ -2112,7 +2112,7 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: Georgia, 'Times New Roman', Times, serif;
+			font-family: Brush Script MT, Brush Script Std, cursive;
 			font-weight: 400;
 		}
 
@@ -2129,7 +2129,7 @@ input, select, textarea {
 		}
 
 		.icon.brands:before {
-			font-family: Georgia, 'Times New Roman', Times, serif;
+			font-family: Brush Script MT, Brush Script Std, cursive;
 		}
 
 		.icon.alt:before {
